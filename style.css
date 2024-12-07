@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+:root {
+  --Green: hsl(75, 94%, 57%);
+  --White: hsl(0, 0%, 100%);
+  --Grey-700: hsl(0, 0%, 20%);
+  --Grey-800: hsl(0, 0%, 12%);
+  --Grey-900: hsl(0, 0%, 8%);
+  --font-light: 400;
+  --font-medium: 600;
+  --font-dark: 700;
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.page-wrapper {
+  background-color: var(--Grey-900);
+  height: 100dvh;
+  height: 100 vh;
+  display: grid;
+  place-content: center;
+  color: var(--White);
+}
+
+.card {
+  width: 24em;
+  background-color: var(--Grey-800);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5em;
+  padding: 2em;
+  border-radius: 1em;
+}
+
+img {
+  width: 7em;
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
+.username {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75em;
+}
+
+h2 {
+  font-size: 1.75em;
+  font-weight: var(--font-medium);
+}
+
+.username > p {
+  font-size: 1em;
+  color: var(--Green);
+  font-weight: var(--font-dark);
+}
+
+.card > p {
+  font-size: 1em;
+  font-weight: var(--font-light);
+}
+
+.card > a {
+  text-align: center;
+  width: 100%;
+  background-color: var(--Grey-700);
+  color: var(--White);
+  padding-block: 1em;
+  font-weight: var(--font-medium);
+  border-radius: 0.75em;
+}
+
+.card > a:hover {
+  background-color: var(--Green);
+}
+
+.attribution {
+  position: fixed;
+  bottom: 10px;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 425px) {
+  .card {
+    width: 26em;
+    padding-inline: 3em;
+  }
+}
